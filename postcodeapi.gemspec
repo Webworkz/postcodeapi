@@ -7,11 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "postcodeapi"
   spec.version       = Postcodeapi::VERSION
   spec.authors       = ["martijnschouwe"]
-  spec.email         = ["mschouwe@tripolis.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.email         = ["martijnschouwe@hotmail.com"]
+  spec.description   = %q{API wrapper for postcodeapi.nu zipcode api}
+  spec.summary       = %q{Get address details from the postcodeapi.nu api}
+  spec.homepage      = "https://github.com/martijnschouwe/postcodeapi"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
