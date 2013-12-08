@@ -1,0 +1,42 @@
+--- 
+http_interactions: 
+  - 
+    recorded_at: "Mon, 09 Dec 2013 15:02:48 GMT"
+    request: 
+      body: 
+        encoding: UTF-8
+        string: ""
+      headers: 
+        Accept: 
+          - "*/*; q=0.5, application/json"
+        Accept-Encoding: 
+          - "gzip, deflate"
+        Api-Key: 
+          - 1234567890abcdefghizjklmnopqrstuvwxyz
+        User-Agent: 
+          - Ruby
+      method: get
+      uri: "http://api.postcodeapi.nu/5041EB"
+    response: 
+      body: 
+        encoding: UTF-8
+        string: "{ \"success\": true, \"resource\": { \"street\": \"Wilhelminapark\", \"postcode\": \"5041EB\", \"town\": \"Tilburg\", \"latitude\": 51.9401, \"longitude\": 5.61531, \"x\": 133505, \"y\": 397537 } }"
+      headers: 
+        Alternate-Protocol: 
+          - "80:quic,80:quic"
+        Cache-Control: 
+          - no-cache
+        Content-Type: 
+          - "application/json; charset=utf-8"
+        Date: 
+          - "Mon, 09 Dec 2013 15:02:48 GMT"
+        Server: 
+          - "Google Frontend"
+        Transfer-Encoding: 
+          - chunked
+        Vary: 
+          - Accept-Encoding
+      http_version: ~
+      status: 
+        code: 200
+        message: OK
