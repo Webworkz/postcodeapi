@@ -1,6 +1,6 @@
 # Postcodeapi
 
-[![Build Status](https://travis-ci.org/martijnschouwe/postcodeapi.png)](https://travis-ci.org/martijnschouwe/postcodeapi)[![Code Climate](https://codeclimate.com/github/martijnschouwe/postcodeapi.png)](https://codeclimate.com/github/martijnschouwe/postcodeapi)
+[![Build Status](https://travis-ci.org/martijnschouwe/postcodeapi.png)](https://travis-ci.org/martijnschouwe/postcodeapi) [![Code Climate](https://codeclimate.com/github/martijnschouwe/postcodeapi.png)](https://codeclimate.com/github/martijnschouwe/postcodeapi) [![Gem Version](https://badge.fury.io/rb/postcodeapi.png)](http://badge.fury.io/rb/postcodeapi)
 
 API wrapper for postcodeapi.nu zipcode api.
 
