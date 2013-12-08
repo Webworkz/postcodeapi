@@ -1,5 +1,7 @@
 # Postcodeapi
 
+[![Build Status](https://travis-ci.org/martijnschouwe/postcodeapi.png)](https://travis-ci.org/martijnschouwe/postcodeapi)
+
 API wrapper for postcodeapi.nu zipcode api.
 
 ## Installation
