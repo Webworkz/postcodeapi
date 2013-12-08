@@ -1,6 +1,6 @@
 # Postcodeapi
 
-[![Build Status](https://travis-ci.org/martijnschouwe/postcodeapi.png)](https://travis-ci.org/martijnschouwe/postcodeapi) [![Code Climate](https://codeclimate.com/github/martijnschouwe/postcodeapi.png)](https://codeclimate.com/github/martijnschouwe/postcodeapi) [![Gem Version](https://badge.fury.io/rb/postcodeapi.png)](http://badge.fury.io/rb/postcodeapi)
+[![Build Status](https://travis-ci.org/martijnschouwe/postcodeapi.png)](https://travis-ci.org/martijnschouwe/postcodeapi) [![Code Climate](https://codeclimate.com/github/martijnschouwe/postcodeapi.png)](https://codeclimate.com/github/martijnschouwe/postcodeapi) [![Gem Version](https://badge.fury.io/rb/postcodeapi.png)](http://badge.fury.io/rb/ww-postcodeapi)
 
 API wrapper for postcodeapi.nu zipcode api.
 
@@ -8,7 +8,7 @@ API wrapper for postcodeapi.nu zipcode api.
 
 Add this line to your application's Gemfile:
 
-    gem 'postcodeapi'
+    gem 'ww-postcodeapi'
 
 And then execute:
 

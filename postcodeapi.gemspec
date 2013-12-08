@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'postcodeapi/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "postcodeapi"
+  spec.name          = "ww-postcodeapi"
   spec.version       = Postcodeapi::VERSION
   spec.authors       = ["martijnschouwe"]
   spec.email         = ["martijnschouwe@hotmail.com"]
