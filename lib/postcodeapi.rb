@@ -20,6 +20,16 @@ module Postcodeapi
     OpenStruct.new res[:resource]
   end
 
+  def self.get_address(zipcode,number)
+    # Format the zipcode
+    zipcode = format_zipcode(zipcode)
+    # Perform request
+    response = RestClient.get "#{@api_url}/#{zipcode}/#{number}", {:content_type => :json, :accept => :json, :'Api-Key' => @api_key}
+    # Return openstruct output
+    res = JSON.parse(response.to_str,{symbolize_names: true})
+    OpenStruct.new res[:resource]
+  end
+
   def self.format_zipcode(zipcode = nil)
     if zipcode.nil? || zipcode == ""
       raise Exception.new("No zipcode provided")

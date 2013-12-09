@@ -19,7 +19,7 @@ describe Postcodeapi do
     expect { Postcodeapi.format_zipcode("11AA") }.to raise_error
   end
 
-  it 'should return an address result' do
+  it 'should return a street result' do
     VCR.use_cassette('get_street', :allow_playback_repeats => true) do
       json_response_mock = '{
           "success": true,
@@ -36,6 +36,29 @@ describe Postcodeapi do
       res = JSON.parse(json_response_mock.to_str,{symbolize_names: true})
       Postcodeapi.get_street("5041EB").should eq OpenStruct.new(res[:resource])
       Postcodeapi.get_street("5041EB").street.should eq "Wilhelminapark"
+    end
+  end
+
+  it 'should return an address result' do
+    VCR.use_cassette('get_address', :allow_playback_repeats => true) do
+      json_response_mock = '{
+          "success": true,
+          "resource": {
+              "street": "Wilhelminapark",
+              "house_number":4,
+              "postcode": "5041EB",
+              "town": "Tilburg",
+              "latitude": 51.9401,
+              "longitude": 5.61531,
+              "x": 133505,
+              "y": 397537
+          }
+      }'
+      res = JSON.parse(json_response_mock.to_str,{symbolize_names: true})
+      Postcodeapi.get_address("5041EB",4).should eq OpenStruct.new(res[:resource])
+      Postcodeapi.get_address("5041EB",4).street.should eq "Wilhelminapark"
+      Postcodeapi.get_address("5041EB",4).house_number.should eq 4
+
     end
   end
 
