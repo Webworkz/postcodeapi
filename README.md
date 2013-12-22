@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install postcodeapi
+    $ gem install ww-postcodeapi
 
 ## Setup
 
