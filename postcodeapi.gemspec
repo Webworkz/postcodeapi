@@ -6,11 +6,11 @@ require 'postcodeapi/version'
 Gem::Specification.new do |spec|
   spec.name          = "ww-postcodeapi"
   spec.version       = Postcodeapi::VERSION
-  spec.authors       = ["martijnschouwe"]
-  spec.email         = ["martijnschouwe@hotmail.com"]
+  spec.authors       = ["Webworkz"]
+  spec.email         = ["info@webworkz.nl"]
   spec.description   = %q{API wrapper for postcodeapi.nu zipcode api}
   spec.summary       = %q{Get address details from the postcodeapi.nu api}
-  spec.homepage      = "https://github.com/martijnschouwe/postcodeapi"
+  spec.homepage      = "https://github.com/webworkz/postcodeapi"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
